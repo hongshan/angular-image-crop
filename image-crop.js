@@ -1186,6 +1186,7 @@
 			var dataUrl = tempCanvas.toDataURL();
 			
 			scope.result = dataUrl;
+            scope.croppedDataUri = '';
             scope.resultBlob = dataURItoBlob(dataUrl);
             
             scope.$apply();
